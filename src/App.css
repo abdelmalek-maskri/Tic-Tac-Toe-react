@@ -2,8 +2,8 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:#333;
-  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to right, #1e293b, #0f172a);
+  font-family: 'Poppins', Courier, monospace;
 
 }
 .squares{
@@ -30,20 +30,24 @@ body{
 }
 
 .description-button{
-  width: 100%;
+  width: 230px;
   height: 40px;
-  background-color: cadetblue;
   color: white;
-  border:0;
   outline:0;
-  box-shadow: 0 10px 10px rgba(0,0,0,.1);
   cursor: pointer;
-  margin: 5px ;
+  margin: 5px 20px;
   font-weight: 500;
-  border-radius: 5px;
   padding : 12px;
+  border:none;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #0f172a; 
+  box-shadow: 0 4px 6px rgba(96, 165, 250, 0.2);  
 }
-
+.description-button:hover{
+  border: 2px solid #60a5fa; 
+  box-shadow: 0 4px 6px rgba(96, 165, 250, 0.5);
+}
 .current-move{
   font-weight: 800;
   font-size: 22px;
@@ -58,7 +62,7 @@ body{
   align-items: center;
   flex-direction: row;
   height: 100vh;
-
+  position: relative;
 }
 .board-row{
   display: flex;

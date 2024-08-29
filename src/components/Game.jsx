@@ -41,16 +41,13 @@ export default function Game() {
 
   return (
     <div className='game'>
-        <div>
-            
-        </div>
+        <button onClick={toggleSortOrder} className='description-button'>
+            {isAscending ? 'Sort Descending' : 'Sort Ascending'}
+        </button>
         <div className='board'>
             <Board squares={currentSquares} xIsNext={xIsNext} onPlay={handlePlay}/>
         </div>
         <div className='moves'>
-        <button onClick={toggleSortOrder} className='description-button'>
-            {isAscending ? 'Sort Descending' : 'Sort Ascending'}
-        </button>
             <ol>{sortedMoves}</ol>
         </div>
         
