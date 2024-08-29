@@ -1,6 +1,7 @@
 # Tic-Tac-Toe-react
 
 A simple and interactive Tic-Tac-Toe game built with React. This project features a playable game board where users can take turns playing as 'X' or 'O', track their moves, and sort them in ascending or descending order.
+check it out here 😇 [myfav-tic-tac-toe.netlify.app](https://myfav-tic-tac-toe.netlify.app/)
 
 ## Features
 
