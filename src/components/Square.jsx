@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Square({handleClick, value}) {
+export default function Square({handleClick, value, highlighted}) {
   return (
     <div>
-      <button className="squares" onClick={handleClick}>{value}</button>
+      <button className={highlighted ? "highlighted squares": "squares"} onClick={handleClick}>{value}</button>
     </div>
   )
 }

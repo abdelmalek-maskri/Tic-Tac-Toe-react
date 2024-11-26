@@ -66,6 +66,7 @@ export default function Board({ squares, xIsNext, onPlay }) {
             <Square
                 value={squares[i]}
                 handleClick={() => handleClick(i)}
+                highlighted={winnerLine && winnerLine.includes(i)}
             />
         );
     }
@@ -92,7 +93,7 @@ export default function Board({ squares, xIsNext, onPlay }) {
     return (
         <div className='container'>
             <div className='status'>{status}</div>
-            <div className='status'>{winningLine}</div>
+            {/* <div className='status'>{winningLine}</div> */}
             {renderBoard()}
         </div>
     );

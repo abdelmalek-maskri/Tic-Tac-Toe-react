@@ -7,19 +7,16 @@ body{
 
 }
 .squares{
-  padding: 20px 40px 35px 30px;
+  padding: 25px 35px 25px 35px;
   margin: 5px;
   border:0;
   border-radius: 5px;
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-  border: 1px solid #ccc;
+  font-size: 30px;
+  font-weight: bold;
   color:#333;
-  text-align: center;
-  font-weight: 500;
   text-transform: capitalize;
-
+  width: 3em;
+  height: 3em;
 }
 
 .status{
@@ -61,9 +58,27 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 100vh;
+  height: 60vh;
   position: relative;
 }
 .board-row{
   display: flex;
+}
+.highlighted{
+  background-color: #0f172a; 
+  border: none;
+
+  color: white;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 1.2em;
 }
